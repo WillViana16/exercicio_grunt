@@ -13,14 +13,14 @@ module.exports=function(grunt) {
                     compress: true, 
                 },
                 files: {
-                    'main.min.css':'main.less'
+                    'dist/styles/main.min.css':'src/styles/main.less'
                 }
             }, // fecha o compilador do less
         },
         uglify: { // comprimindo js
             target: {
                 files: {
-                    'main.min.js': 'main.js'
+                    'dist/scripts/main.min.js':'src/scripts/main.js'
                 }
             }
         }, // fim do compressor
